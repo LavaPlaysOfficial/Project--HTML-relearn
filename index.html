@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style/bt/bootstrap.min.css" />
     <link rel="stylesheet" href="./style/styleheader.css" />
     <link rel="stylesheet" href="./style/stylehome.css" />
-    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="icon" href="./img/logo.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -61,20 +61,23 @@
                 </a>
             </div>
             <div class="col-12 col-md-4 mb-3">
-                <div class="card">
-                    <img src="./img/404-page.webp" alt="404-image">
-                    <h2>
-                        Még semmi nincs itt, de majd talán lesz
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, operandi rationes priscas hic cognosces.
-                    </p>
-                    <h10>
-                        yyyy.mm.dd
-                    </h10>
-                </div>
+                <a href="./html/wip.html">
+                    <div class="card">
+                        <img src="./img/404-page.webp" alt="404-image">
+                        <h2>
+                            Még semmi nincs itt, de majd talán lesz
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, operandi rationes priscas hic cognosces.
+                        </p>
+                        <h10>
+                            yyyy.mm.dd
+                        </h10>
+                    </div>
+                    </a>
             </div>
             <div class="col-12 col-md-4 mb-3">
+                <a href="./html/wip.html">
                 <div class="card">
                     <img src="./img/404-page.webp" alt="404-image">
                     <h2>
@@ -87,12 +90,17 @@
                         yyyy.mm.dd
                     </h10>
                 </div>
+                </a>
             </div>
         </div>
     </div>
-
-    <!-- Optional empty div -->
-    <div><!-- Can be deleted if unused --></div>
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 The Operating System Guru. All rights reserved.</p>
+            <p>Sources: <a href="https://example.com">Example Source</a>, <a href="https://another-source.com">Another Source</a></p>
+        </div>
+    </footer>
     <script>
         let lastScroll = 0;
         const header = document.getElementById('header');
@@ -107,7 +115,6 @@
             lastScroll = currentScroll;
         });
     </script>
-
 </body>
 
 </html>

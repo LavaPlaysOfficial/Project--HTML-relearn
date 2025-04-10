@@ -11,7 +11,7 @@
 
 .card img {
     width: 100%;
-    height: 150px; /* fixed height */
-    object-fit: cover; /* makes sure it doesn’t stretch weirdly */
-    border-radius: 10px; /* optional, looks smooth */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
 }
