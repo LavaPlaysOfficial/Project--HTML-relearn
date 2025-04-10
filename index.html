@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,9 +20,15 @@
         <a href="./index.html" class="mx-3">
             <img src="./img/logo.png" alt="Logo" id="logo" />
         </a>
-        <a href="./html/about.html" class="header-b"><p>Rólunk</p></a>
-        <a href="./html/docs.html" class="header-b"><p>Dokumentumok</p></a>
-        <a href="./html/links.html" class="header-b"><p>Linkek</p></a>
+        <a href="./html/about.html" class="header-b">
+            <p>Rólunk</p>
+        </a>
+        <a href="./html/docs.html" class="header-b">
+            <p>Dokumentumok</p>
+        </a>
+        <a href="./html/links.html" class="header-b">
+            <p>Linkek</p>
+        </a>
         <a href="./html/wip.html" class="mx-3">
             <img src="./img/search.png" alt="search icon" id="search-button" />
         </a>
@@ -37,13 +44,70 @@
     <!-- PLACEHOLDER SECTION -->
     <div class="container my-5">
         <div class="row">
-            <div class="col-12 col-md-4 mb-3"></div>
-            <div class="col-12 col-md-4 mb-3"><div>
-            <div class="col-12 col-md-4 mb-3"></div>
+            <div class="col-12 col-md-4 mb-3">
+                <a href="./html/blog1.html">
+                    <div class="card">
+                        <img src="./img/blog1-image.jpg" alt="blog1-image">
+                        <h2>
+                            A gépes operációs rendszerek
+                        </h2>
+                        <p>
+                            Ebben a blogban az gépes operációs rendszerek múltját ismerheted meg.
+                        </p>
+                        <h10>
+                            2025.04.10
+                        </h10>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <img src="./img/404-page.webp" alt="404-image">
+                    <h2>
+                        Még semmi nincs itt, de majd talán lesz
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, operandi rationes priscas hic cognosces.
+                    </p>
+                    <h10>
+                        yyyy.mm.dd
+                    </h10>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <img src="./img/404-page.webp" alt="404-image">
+                    <h2>
+                        Még semmi nincs itt, de majd talán lesz
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, operandi rationes priscas hic cognosces.
+                    </p>
+                    <h10>
+                        yyyy.mm.dd
+                    </h10>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Optional empty div -->
     <div><!-- Can be deleted if unused --></div>
+    <script>
+        let lastScroll = 0;
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > lastScroll) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+
 </body>
+
 </html>
