@@ -1,59 +1,49 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Operating System Guru - Home</title>
     <script src="./style/bt/jquery.min.js"></script>
     <script src="./style/btpopper.min.js"></script>
     <script src="./style/bt/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./style/bt/bootstrap.min.css">
-    <link rel="stylesheet" href="./style/styleheader.css">
-    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/bt/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/styleheader.css" />
+    <link rel="stylesheet" href="./style/stylehome.css" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
 </head>
 
 <body>
-    <div id="header" class="fixed-top" class="container-fluid">
-        <a href="./index.html">
-            <img src="./img/logo.png" alt="Logo" id="logo"  class="header-e" class="container-fluid">
+    <!-- HEADER -->
+    <div id="header" class="container-fluid fixed-top d-flex flex-wrap align-items-center justify-content-center py-3">
+        <a href="./index.html" class="mx-3">
+            <img src="./img/logo.png" alt="Logo" id="logo" />
         </a>
-        <a href="./html/about.html" class="header-b"  class="header-e" class="container-fluid">
-            <p>Rólunk</p>
+        <a href="./html/about.html" class="header-b"><p>Rólunk</p></a>
+        <a href="./html/docs.html" class="header-b"><p>Dokumentumok</p></a>
+        <a href="./html/links.html" class="header-b"><p>Linkek</p></a>
+        <a href="./html/wip.html" class="mx-3">
+            <img src="./img/search.png" alt="search icon" id="search-button" />
         </a>
-        <a href="./html/docs.html" class="header-b" class="header-e" class="container-fluid">
-            <p>Dokumentumok</p>
-        </a>
-        <a href="./html/links.html" class="header-b" class="header-e" class="container-fluid">
-            <p>
-                Linkek
-            </p>
-        </a>
-        <a href="./html/wip.html" class="header-b" class="header-e" class="container-fluid">
-            <img src="./img/search.png" alt="search icon"  class="header-b" class="header-e" id="search-button" class="container-fluid">
-        </a>
-        <h2 class="header-e" id="motto">
-            ,,You read, We operate!"
-        </h2>
+        <h2 id="motto" class="w-100 text-center mt-3">,,Te olvasol, Mi 'Operálunk'.''</h2>
     </div>
-    <div>
-        
+
+    <!-- TITLE -->
+    <div id="title" class="container text-center mt-5 pt-5">
+        <h1 id="title-text">Legújabb blogok</h1>
+        <hr id="title-hr" />
     </div>
-    <div>
-        <div>
 
-        </div>
-        <div>
-
-        </div>
-        <div>
-
+    <!-- PLACEHOLDER SECTION -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 col-md-4 mb-3"></div>
+            <div class="col-12 col-md-4 mb-3"><div>
+            <div class="col-12 col-md-4 mb-3"></div>
         </div>
     </div>
-    </div>
-    <div>
 
-    </div>
+    <!-- Optional empty div -->
+    <div><!-- Can be deleted if unused --></div>
 </body>
-
 </html>

@@ -1,0 +1,10 @@
+#title {
+    text-align: center;
+}
+
+#title-hr {
+    margin: 1em auto;
+    border: none;
+    border-top: 5px inset black;
+    width: 60%;
+}
